@@ -1,7 +1,7 @@
 ## BlueQubit Challenge by PeaQPerf0rmance
 
 This repository contains the code developed to solve the BlueQubit Challenge.  
-The `.qasm` files are located in the `qasm` folder, and the main challenge-solving code can be found in the `src` folder.
+The `.qasm` files are located in the `qasm` folder, and the main challenge-solving code can be found in `main.py` while the libraries are in the `src` folder.
 
 ## Getting Started
 
