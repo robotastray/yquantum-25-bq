@@ -1,18 +1,18 @@
-## BlueQubit Challenge by PeaQPerf0rmance 
+## BlueQubit Challenge by PeaQPerf0rmance
 
-This repository contains the code used to solve the BlueQubit challenge.
-The `.qasm` files are located in the `qasm` folder, and the code to solve the challenge is in the `src` folder.
+This repository contains the code developed to solve the BlueQubit Challenge.  
+The `.qasm` files are located in the `qasm` folder, and the main challenge-solving code can be found in the `src` folder.
 
-## Gettikng Started
+## Getting Started
 
-To test the code we have developed please install the required libraries via
+To test the code, please install the required libraries by running:
 
-```pip install -r /path/to/requirements.txt```
-
-Then run:
+```bash
+pip install -r /path/to/requirements.txt
+```
+Next, fill in the .env file with the required token. This file is automatically loaded when running main.py.
+Once that is done, execute the following command:
 
 ```
-python ./src/main.py    
+python main.py
 ```
-
-
