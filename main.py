@@ -1,14 +1,6 @@
 import os
 import sys
 from dotenv import load_dotenv
-import numpy as np
-from qiskit import QuantumCircuit, transpile
-from qiskit_aer import AerSimulator
-
-from qiskit.visualization import plot_histogram, plot_state_city
-import matplotlib.pyplot as plt
-import bluequbit
-from qiskit import QuantumCircuit
 
 # Add src directory to sys.path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))

@@ -1,5 +1,4 @@
 import bluequbit
-import sys
 from qiskit import QuantumCircuit
 
 def find_heavy_bitstring(qasm_file, api_token, shots, bond_dimension, index):
