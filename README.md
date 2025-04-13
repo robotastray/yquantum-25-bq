@@ -5,8 +5,14 @@ The `.qasm` files are located in the `qasm` folder, and the code to solve the ch
 
 ## Gettikng Started
 
-To test the code we have developed please install teh required libraries via
+To test the code we have developed please install the required libraries via
 
 ```pip install -r /path/to/requirements.txt```
+
+Then run:
+
+```
+python ./src/main.py    
+```
 
 
