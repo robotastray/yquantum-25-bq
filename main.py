@@ -32,15 +32,24 @@ BOND_DIMENSION = int(os.getenv('BOND_DIMENSION')) # 16
 
 # Change this to desired circuit
 CURRENT_CIRCUITS = [P1,P2,P3,P4,P5,P6]
-i = 0
-# Get circuit
-for CURRENT_CIRCUIT in CURRENT_CIRCUITS:
-    i +=1 #index
-    ###############################################################################
+# Define output file (overwrite mode)
+output_file = "output.txt"
 
-    if CURRENT_CIRCUIT == P1 or CURRENT_CIRCUIT == P2 or CURRENT_CIRCUIT == P3:
+# Open file in write mode to clear previous content
+with open(output_file, "w") as f:
+    f.write("=== BlueQubit Challenge Output ===\n")
+# Get circuit
+for i, CURRENT_CIRCUIT in enumerate(CURRENT_CIRCUITS, start=1):
+    output = f"Processing circuit P{i}: {CURRENT_CIRCUIT}\n"
+    ###############################################################################
+    if CURRENT_CIRCUIT in [P1, P2, P3]:
         result = find_heavy_bitstring(CURRENT_CIRCUIT, API_TOKEN, SHOTS, BOND_DIMENSION, i)
+        output += f"Result: {result}\n"
     else:
-        print(f"For P{i} it's Work in Progress")
+        output += f"For P{i}, it's a Work in Progress\n"
         pass
+    print(output, end="")  # Print to terminal
+    with open(output_file, "a") as f:  # Append to file
+        f.write(output)
+
 

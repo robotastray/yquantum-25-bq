@@ -1,0 +1,13 @@
+=== BlueQubit Challenge Output ===
+Processing circuit P1: ./qasm/P1_little_peak.qasm
+Result: 1001
+Processing circuit P2: ./qasm/P2_swift_rise.qasm
+Result: 0011100001101100011011010011
+Processing circuit P3: ./qasm/P3__sharp_peak.qasm
+Result: 10001101010101010000011111001101000100011010
+Processing circuit P4: ./qasm/P4_golden_mountain.qasm
+For P4, it's a Work in Progress
+Processing circuit P5: ./qasm/P5_granite_summit.qasm
+For P5, it's a Work in Progress
+Processing circuit P6: ./qasm/P6_titan_pinnacle.qasm
+For P6, it's a Work in Progress
