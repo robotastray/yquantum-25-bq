@@ -17,7 +17,7 @@ P5 = "./qasm/P5_granite_summit.qasm"
 P6 = "./qasm/P6_titan_pinnacle.qasm"
 
 # Please fill the .env with the required environmental variable such as API token.
-API_TOKEN = os.getenv('API_TOKEN') # "0JWXHYYvo8GlBfZXiImW2JAutuPYFiBD"  # Replace with your BlueQubit API token
+API_TOKEN = os.getenv('API_TOKEN')  # Replace 'API_TOKEN' value in .env with your BlueQubit API token
 SHOTS = int(os.getenv('SHOTS')) # 1000
 BOND_DIMENSION = int(os.getenv('BOND_DIMENSION')) # 16
 
